@@ -158,15 +158,6 @@ public class LoginSaveSearchLogoffTest {
         WebElement logoff = driver.findElement(By.xpath("(//a[@class='headerLink'])[3]"));
         logoff.click();
         Thread.sleep(1000);
-
-
-
-
-
-
-
-
-
     }
 
 }
