@@ -1,4 +1,4 @@
-package homeworks2;
+package tests;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginSaveSearchLogoffTest {
+public class LoginSaveSearchLogoffTest_hmwrk2 {
 
     /*
                                     Gerekli bilgiler:
@@ -25,7 +25,7 @@ public class LoginSaveSearchLogoffTest {
 
     WebDriver driver = new FirefoxDriver();
 
-    public LoginSaveSearchLogoffTest(){
+    public LoginSaveSearchLogoffTest_hmwrk2(){
 
     }
 
