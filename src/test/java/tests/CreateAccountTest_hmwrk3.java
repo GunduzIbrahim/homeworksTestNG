@@ -56,15 +56,15 @@ public class CreateAccountTest_hmwrk3 {
 
 
         WebElement firstName = Driver.getDriver().findElement(By.id("user[first_name]"));
-        firstName.sendKeys("Emiliano");
+        firstName.sendKeys("Emilian");
 
 
         WebElement lastName = Driver.getDriver().findElement(By.id("user[last_name]"));
-        lastName.sendKeys("Gallardo");
+        lastName.sendKeys("Gallard");
 
 
         WebElement eMail = Driver.getDriver().findElement(By.id("user[email]"));
-        eMail.sendKeys("emilianogallardo@abc.com");
+        eMail.sendKeys("emiliangallar@abc.com");
 
 
         WebElement password = Driver.getDriver().findElement(By.id("user[password]"));
@@ -99,15 +99,15 @@ public class CreateAccountTest_hmwrk3 {
 
 
         WebElement firstName = Driver.getDriver().findElement(By.id("user[first_name]"));
-        firstName.sendKeys("Emiliano");
+        firstName.sendKeys("Emilian");
 
 
         WebElement lastName = Driver.getDriver().findElement(By.id("user[last_name]"));
-        lastName.sendKeys("Gallardo");
+        lastName.sendKeys("Gallard");
 
 
         WebElement eMail = Driver.getDriver().findElement(By.id("user[email]"));
-        eMail.sendKeys("emilianogallardo@abc.com");
+        eMail.sendKeys("emiliangallar@abc.com");
 
 
         WebElement password = Driver.getDriver().findElement(By.id("user[password]"));
@@ -143,7 +143,7 @@ public class CreateAccountTest_hmwrk3 {
 
 
         WebElement userPassword = Driver.getDriver().findElement(By.xpath("//input[@id='user[password]']"));
-        userEmail.sendKeys("abcdef1.");
+        userPassword.sendKeys("abcdef1.");
 
 
         WebElement signUpButton = Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
