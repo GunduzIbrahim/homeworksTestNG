@@ -16,9 +16,9 @@ public class WebTables_Homework5 extends TestBase {
     @Test
     public void questionOneTest() throws InterruptedException {
         Driver.getDriver().get("https://the-internet.herokuapp.com/tables");
-        String actualValue = "http://www.timconway.com";
-        String expectedValue = tableTestPage.firstTableFourthRowFifthColumn.getText();
-        System.out.println(expectedValue);
+        String expectedValue = "http://www.timconway.com";
+        String actualValue = tableTestPage.firstTableFourthRowFifthColumn.getText();
+        System.out.println(actualValue);
         Assert.assertEquals(actualValue,expectedValue);
     }
 
@@ -42,9 +42,9 @@ public class WebTables_Homework5 extends TestBase {
     @Test
     public void questionThreeTest() throws InterruptedException {
         Driver.getDriver().get("https://the-internet.herokuapp.com/tables");
-        String actualValue = "$100.00";
-        String expectedValue = tableTestPage.secondTableThirdRowFourthColumn.getText();
-        System.out.println(expectedValue);
+        String expectedValue = "$100.00";
+        String actualValue = tableTestPage.secondTableThirdRowFourthColumn.getText();
+        System.out.println(actualValue);
         Assert.assertEquals(actualValue,expectedValue);
     }
 }
