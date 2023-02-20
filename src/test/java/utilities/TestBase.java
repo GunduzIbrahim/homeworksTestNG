@@ -1,6 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +11,8 @@ import java.time.Duration;
 public class TestBase {
 
     protected Actions actions = new Actions(Driver.getDriver());
+    protected WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+    public ReUsableMethods reUsableMethods = new ReUsableMethods();
 
     @BeforeMethod
     public void setup(){
@@ -18,7 +21,7 @@ public class TestBase {
         // Ancak yaptığımız örnek testlerden dolayı birçok farklı link ile çalışıyoruz. Sabit bir proje linkimiz olmadığı için aşağıdaki kod satırı yoruma alınmıştır.
         // Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
     }
-    @AfterClass
+    @AfterMethod
     public void tearDown(){
 
         Driver.closeDriver();
