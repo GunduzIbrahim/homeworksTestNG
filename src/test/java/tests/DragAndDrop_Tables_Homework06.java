@@ -56,6 +56,7 @@ public class DragAndDrop_Tables_Homework06 extends TestBase {
 
         softAssert.assertEquals(actualValue1,expectedValue1,"Value1 hatali");
         softAssert.assertEquals(actualValue2,expectedValue2, "Value2 hatali");
+        softAssert.assertAll();
         Driver.wait(1);
 
         String expectedResult = "Perfect!";
