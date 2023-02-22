@@ -47,7 +47,7 @@ public class DragAndDrop_Tables_Homework06 extends TestBase {
         Driver.wait(1);
         actions.dragAndDrop(allPages.dragAndDropPage.sourceValueSecond5000, allPages.dragAndDropPage.targetInDebitSideAmountRight).build().perform();
         Driver.wait(1);
-        String expectedValue1 = "500";
+        String expectedValue1 = "5000";
         String expectedValue2 = "5000";
         String actualValue1 = allPages.dragAndDropPage.savedValueInTableDebitMovementResult.getText();
         String actualValue2 = allPages.dragAndDropPage.savedValueInTableCreditMovementResult.getText();
@@ -91,5 +91,6 @@ public class DragAndDrop_Tables_Homework06 extends TestBase {
         }
         Assert.assertTrue(result);
         System.out.println(result);
+
     }
 }
