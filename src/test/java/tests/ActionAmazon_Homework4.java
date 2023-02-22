@@ -53,10 +53,10 @@ public class ActionAmazon_Homework4 extends TestBase {
         WebElement searchButton = Driver.getDriver().findElement(By.xpath("//input[@id='gh-btn']"));
         searchButton.click();
 
-        String actualPrice = "EUR 19,23";
-        String expectedPrice = Driver.getDriver().findElement(By.xpath("(//*[@class='s-item__price'])[2]")).getText();
+        String expectedPrice = "EUR 19,23";
+        String actualPrice = Driver.getDriver().findElement(By.xpath("(//*[@class='s-item__price'])[2]")).getText();
 
-        Assert.assertTrue(expectedPrice.contains(actualPrice));
+        Assert.assertTrue(actualPrice.contains(expectedPrice));
 
     }
 
