@@ -14,6 +14,8 @@ public class TestBase {
     protected WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
     public ReUsableMethods reUsableMethods = new ReUsableMethods();
 
+    public ReadExcel readExcel = new ReadExcel();
+
     @BeforeMethod
     public void setup(){
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
